@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-## Position : 
+## Position : 백엔드
 
 ## 이름 : 
 
