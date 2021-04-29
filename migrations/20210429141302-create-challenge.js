@@ -10,6 +10,7 @@ module.exports = {
       },
       user_id: {
         type: Sequelize.INTEGER,
+        foreignKey: true,
         references: { model: "users", key: "id" },
       },
       title: {
@@ -19,7 +20,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       body: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
       },
     });
   },
