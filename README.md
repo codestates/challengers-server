@@ -1,7 +1,5 @@
 # challengers-server
 
-# Welcome to the challengers-server wiki!
-
 ## 프로젝트명 : challengers
 ## 팀 명 : CoDeMon
 
