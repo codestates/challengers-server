@@ -1,7 +1,7 @@
 ---
 name: Dev Log
 about: Write your daily dev log
-title: "[Dev Log]"
+title: "[✍️Dev Log] 본인이름 / 2021-월-일"
 labels: ''
 assignees: ''
 
