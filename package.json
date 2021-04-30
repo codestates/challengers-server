@@ -1,0 +1,27 @@
+{
+  "name": "challengers-server",
+  "version": "1.0.0",
+  "description": "## 프로젝트명 : challengers ## 팀 명 : CoDeMon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyufjvbn2/challengers-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyufjvbn2/challengers-server/issues"
+  },
+  "homepage": "https://github.com/tyufjvbn2/challengers-server#readme",
+  "devDependencies": {
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mysql2": "^2.2.5"
+  }
+}
