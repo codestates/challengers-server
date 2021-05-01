@@ -3,6 +3,11 @@
 const fs = require("fs");
 const path = require("path");
 const Sequelize = require("sequelize");
+const challenges = require("./challenge");
+const likes = require("./like");
+const pinlists = require("./pinlist");
+const users = require("./user");
+const user_users = require("./user_user");
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || "development";
 const config = require(__dirname + "/../config/config.js")[env];
@@ -41,6 +46,23 @@ Object.keys(db).forEach((modelName) => {
 });
 
 db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+
+//실제 db속 테이블의 이름값을 입력해야 함(sequelize로 생성시 복수로 이름 생성됨)
+//해당 명령어를 통해 모델과 실제 데이터베이스가 연결됨
+
+db.users = users;
+// user.init(sequelize);
+
+db.challenges = challenges;
+// challenge.init(sequelize);
+
+db.pinlists = pinlists;
+// pinlist.init(sequelize);
+
+db.likes = likes;
+// like.init(sequelize);
+
+db.user_users = user_users;
+// user_user.init(sequelize);
 
 module.exports = db;
