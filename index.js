@@ -17,10 +17,12 @@ app.use(
     secret: "@CoDeMon",
     resave: false,
     saveUninitialized: true,
+    //테스트용 유저 아이디
+    userId: 3,
     cookie: {
       domain: "localhost;",
       path: "/",
-      maxAge: 24 * 6 * 60 * 10000,
+      maxAge: 24 * 6 * 60 * 1000,
       sameSite: "none",
       httpOnly: true,
       secure: true,
