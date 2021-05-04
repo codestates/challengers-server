@@ -9,20 +9,31 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.hasMany(models.challenge, {
+        foreignKey: "user_id",
+        sourceKey: "id",
+      });
+      this.hasMany(models.pinlist, { foreignKey: "user_id", sourceKey: "id" });
+      this.hasMany(models.like, { foreignKey: "user_id", sourceKey: "id" });
+      this.hasMany(models.user_user, {
+        foreignKey: "user_id",
+        sourceKey: "id",
+      });
+      this.hasMany(models.user_user, {
+        foreignKey: "follow_id",
+        sourceKey: "id",
+      });
     }
   }
   user.init(
     {
-      id: {
-        type: DataTypes.NUMBER,
-        primaryKey: true,
-      },
       user_id: DataTypes.STRING,
       password: DataTypes.STRING,
       email: DataTypes.STRING,
     },
     {
       sequelize,
+      timestamps: false,
       modelName: "user",
     }
   );
