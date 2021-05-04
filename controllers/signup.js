@@ -3,9 +3,9 @@ const { user } = require("../models");
 const catchError = require("./code/error");
 
 module.exports = async (req, res) => {
-  console.log("파라미터 확인", req.params);
+  console.log("입력값 확인", req.body);
   // console.log("테이블 확인", user);
-  const { userId, password, email } = req.params;
+  const { userId, password, email } = req.body;
 
   try {
     //입력된 아이디와 이메일로 각각 데이터를 찾음

@@ -3,10 +3,11 @@ module.exports = {
   signup: require("./signup"),
   changeinfo: require("./changeinfo"),
   logout: require("./logout"),
+  main: require("./main"),
 
-  myChallenges: require("./myChallenges"),
-  tag: require("./tag"),
-  challenge: require("./challenge"),
+  // myChallenges: require("./myChallenges"),
+  // tag: require("./tag"),
+  // challenge: require("./challenge"),
 
   //   pin: require("./pin"),
   //   pinlist: require("./pinlist"),

@@ -3,9 +3,9 @@ const { user } = require("../models");
 const catchError = require("./code/error");
 
 module.exports = async (req, res) => {
-  console.log("파라미터 확인", req.params);
+  console.log("입력값 확인", req.body);
   //   console.log("테이블 확인", user);
-  const { userId, password } = req.params;
+  const { userId, password } = req.body;
   try {
     //유저 아이디를 가지고 유저 정보를 쿼리
     const userData = await user.findOne({
@@ -30,7 +30,7 @@ module.exports = async (req, res) => {
         const token = jwt.sign(payload, process.env.SALT, { expiresIn: "10m" });
         console.log("토큰", token);
 
-        //세션 전달
+        //세션 전달 (유저의 pk값으로 저장)
         req.session.userId = id;
         //토큰 전달
         res.cookie("token", token);

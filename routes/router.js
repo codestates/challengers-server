@@ -10,8 +10,9 @@ router.post("/login", controllers.login);
 router.post("/signup", controllers.signup);
 router.put("/change-info", controllers.changeinfo);
 
-router.get("/my-challenges", controllers.myChallenges);
-router.get("/tag", controllers.tag);
+router.get("/main", controllers.main);
+// router.get("/my-challenges", controllers.myChallenges);
+// router.get("/tag", controllers.tag);
 
 // router.post("/challenge", controllers.challenge.post);
 // router.delete("/challenge", controllers.challenge.delete);

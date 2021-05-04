@@ -1,6 +1,7 @@
 const express = require("express");
 const session = require("express-session");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
 require("dotenv").config();
 //라우팅 처리는 컨트롤러의 index.js에서 잡아주기(I did)
 const customRouter = require("./routes/router");
@@ -31,6 +32,7 @@ app.use(
 );
 
 app.use(express.json());
+app.use(cookieParser());
 
 app.use(
   cors({

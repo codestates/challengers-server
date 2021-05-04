@@ -3,9 +3,9 @@ const { user } = require("../models");
 const catchError = require("./code/error");
 
 module.exports = async (req, res) => {
-  console.log("파라미터 확인", req.params);
+  console.log("입력값 확인", req.body);
   console.log("세션 확인", req.session);
-  const { oldPassword, newPassword, email } = req.params;
+  const { oldPassword, newPassword, email } = req.body;
   const token = req.headers.authorization.split(" ")[1];
   //사용자 데이터를 찾고 이를 수정
   try {
@@ -49,8 +49,8 @@ module.exports = async (req, res) => {
         //기존 패스워드를 맞게 입력했고 중복되지 않은 이메일로 변경요청을 하였을때, 정상처리 과정
         user.update(
           {
-            password: newPassword,
-            email: email,
+            password: newPassword, //바뀔 패스워드
+            email: email, //바뀔 이메일값
           },
           {
             where: { id: userData.id },
