@@ -30,6 +30,14 @@ module.exports = {
           user_id: 3,
           follow_id: 2,
         },
+        {
+          user_id: 1,
+          follow_id: 4,
+        },
+        {
+          user_id: 4,
+          follow_id: 3,
+        },
       ],
       {}
     );

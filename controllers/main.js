@@ -88,7 +88,7 @@ module.exports = async (req, res) => {
       include: [
         {
           model: user,
-          arttributes: ["user_id"],
+          // arttributes: ["user_id"],
           // include: [
           //   {
           //     model: like,

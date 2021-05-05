@@ -38,6 +38,34 @@ module.exports = {
           user_id: 3,
           challenge_id: 4,
         },
+        {
+          user_id: 1,
+          challenge_id: 5,
+        },
+        {
+          user_id: 4,
+          challenge_id: 7,
+        },
+        {
+          user_id: 1,
+          challenge_id: 6,
+        },
+        {
+          user_id: 3,
+          challenge_id: 6,
+        },
+        {
+          user_id: 1,
+          challenge_id: 7,
+        },
+        {
+          user_id: 3,
+          challenge_id: 7,
+        },
+        {
+          user_id: 2,
+          challenge_id: 7,
+        },
       ],
       {}
     );

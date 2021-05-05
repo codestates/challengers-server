@@ -2,6 +2,7 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const { user } = require("../models");
 const catchError = require("./code/error");
+// const session = require("express-session");
 
 module.exports = async (req, res) => {
   console.log("입력값 확인", req.body);
@@ -34,6 +35,7 @@ module.exports = async (req, res) => {
         //세션 전달 (유저의 pk값으로 저장)
         req.session.userId = id;
         //토큰 전달
+
         res.cookie("token", token);
         res.status(200).send({ message: "login succeed" });
       }

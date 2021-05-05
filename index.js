@@ -19,7 +19,7 @@ app.use(
     resave: false,
     saveUninitialized: true,
     //테스트용 유저 아이디
-    userId: 3,
+    // userId: 3,
     cookie: {
       domain: "localhost;",
       path: "/",

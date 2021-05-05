@@ -29,6 +29,11 @@ module.exports = {
           password: "todo",
           email: "jh@admin.com",
         },
+        {
+          user_id: "abc",
+          password: "123456",
+          email: "abc@admin.com",
+        },
       ],
       {}
     );

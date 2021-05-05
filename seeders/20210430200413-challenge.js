@@ -28,15 +28,33 @@ module.exports = {
         },
         {
           user_id: 2,
-          title: "I am best",
+          title: "I am bad person",
           tag_name: "brag",
-          body: "{content : appearance, date : 1year}",
+          body: "{content : stoling, date : known}",
         },
         {
           user_id: 3,
           title: "coding god",
           tag_name: "coding",
           body: "{content : coding, date : whole life}",
+        },
+        {
+          user_id: 2,
+          title: "I am best",
+          tag_name: "brag",
+          body: "{content : appearance, date : 1year}",
+        },
+        {
+          user_id: 3,
+          title: "til",
+          tag_name: "prove",
+          body: "{content : coding, date : today}",
+        },
+        {
+          user_id: 1,
+          title: "I will be hired soon",
+          tag_name: "expectation",
+          body: "{content : studying, date : few months}",
         },
       ],
       {}
