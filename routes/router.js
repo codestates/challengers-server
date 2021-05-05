@@ -12,7 +12,8 @@ router.put("/change-info", controllers.changeinfo);
 
 router.get("/main", controllers.main);
 router.get("/my-challenges", controllers.myChallenges);
-// router.get("/tag", controllers.tag);
+
+router.get("/follower", controllers.follower);
 
 // router.post("/challenge", controllers.challenge.post);
 // router.delete("/challenge", controllers.challenge.delete);
@@ -27,7 +28,6 @@ router.get("/my-challenges", controllers.myChallenges);
 // router.post("/like", controllers.like);
 
 // router.get("/following", controllers.following.get);
-// router.post("/following", controllers.following.add);
 // router.delete("/following", controllers.following.delete);
 
 // router.get("/logout", controllers.logout);

@@ -6,6 +6,8 @@ module.exports = {
   main: require("./main"),
 
   myChallenges: require("./myChallenges"),
+
+  follower: require("./follower"),
   // tag: require("./tag"),
   // challenge: require("./challenge"),
 
