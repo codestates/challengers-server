@@ -5,7 +5,7 @@ module.exports = {
   logout: require("./logout"),
   main: require("./main"),
 
-  // myChallenges: require("./myChallenges"),
+  myChallenges: require("./myChallenges"),
   // tag: require("./tag"),
   // challenge: require("./challenge"),
 

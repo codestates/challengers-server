@@ -11,7 +11,7 @@ router.post("/signup", controllers.signup);
 router.put("/change-info", controllers.changeinfo);
 
 router.get("/main", controllers.main);
-// router.get("/my-challenges", controllers.myChallenges);
+router.get("/my-challenges", controllers.myChallenges);
 // router.get("/tag", controllers.tag);
 
 // router.post("/challenge", controllers.challenge.post);
