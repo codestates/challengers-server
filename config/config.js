@@ -18,8 +18,8 @@ module.exports = {
   production: {
     username: process.env.DATABASE_USERNAME,
     password: process.env.DATABASE_PASSWORD,
-    database: "challengers",
-    host: "127.0.0.1",
+    database: process.env.DATABASE_USE,
+    host: process.env.DATABASE_HOST ? process.env.DATABASE_HOST : "127.0.0.1",
     dialect: "mysql",
   },
 };
