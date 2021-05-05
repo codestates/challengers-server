@@ -36,7 +36,8 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "*", // 확인사항
+    origin: "http://localhost:3000", // 확인사항
+    methods: ["GET", "POST", "OPTION"],
     credentials: true, // 확인사항
   })
 );
