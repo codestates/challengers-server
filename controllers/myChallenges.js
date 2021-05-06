@@ -4,6 +4,8 @@ const { challenge, user } = require("../models");
 
 module.exports = async (req, res) => {
   try {
+    console.log("세션", req.session);
+    console.log("세션 아이디", req.session.userId);
     // console.log("헤더 확인", req.headers);
     // const token = req.headers.cookie.split("=")[1];
     // // console.log("테이블 확인", user);

@@ -33,11 +33,14 @@ module.exports = async (req, res) => {
         console.log("토큰", token);
 
         //세션 전달 (유저의 pk값으로 저장)
-        req.session.userId = id;
         //토큰 전달
-
-        res.cookie("token", token);
-        res.status(200).send({ message: "login succeed" });
+        req.session.save(() => {
+          req.session.userId = id;
+          console.log("세션 확인", req.session.userId);
+          res.cookie("token", token);
+          // res.redirect("/");
+          res.status(200).send({ message: "login succeed", sessionId: id });
+        });
       }
     }
   } catch (err) {
