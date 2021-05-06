@@ -19,9 +19,9 @@ app.use(
     resave: false,
     saveUninitialized: true,
     //테스트용 유저 아이디
-    userId: null,
+    // userId: null,
     cookie: {
-      domain: "localhost;",
+      domain: "localhost",
       path: "/",
       maxAge: 24 * 6 * 60 * 1000,
       sameSite: "none",
