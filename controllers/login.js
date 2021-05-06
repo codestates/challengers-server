@@ -39,6 +39,7 @@ module.exports = async (req, res) => {
           console.log("세션 확인", req.session.userId);
           res.cookie("token", token);
           // res.redirect("/");
+          console.log("서버에서 보내는 세션", req.session);
           res.status(200).send({ message: "login succeed", sessionId: id });
         });
       }

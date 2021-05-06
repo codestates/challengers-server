@@ -4,20 +4,21 @@ const { user, challenge, like } = require("../models");
 const catchError = require("./code/error");
 
 module.exports = async (req, res) => {
-  // console.log("헤더 확인", req.headers);
-  //   const token = req.headers.authorization.split(" ")[1];
+  console.log("헤더 확인", req.headers);
+  console.log("세션", req.session);
+  console.log("오리지날 세션 아이디", req.session.userId);
+  // const token = req.headers.authorization.split(" ")[1];
   //사용자 데이터를 찾고 이를 수정
   try {
-    console.log("세션", req.session);
-    console.log("세션 아이디", req.session.userId);
+    console.log("수정된 방법의 세션 아이디", req.headers.usersessionid);
     // /*로그인 된 후 기본적인 유저 확인 과정*/
     // const valCheck = await jwt.verify(token, process.env.SALT);
     // //세션 자체가 없을때
-    // if (!req.session.userId) {
+    // if (!req.header.userSessionId) {
     //   res.status(401).send({ message: "Unauthorized action detected" });
     // }
     // //세션 토큰 다 있는데 이상한 세션 id값(토큰에 있는값과 다른값)으로 접근 하려 할때
-    // if (valCheck.id !== req.session.userId) {
+    // if (valCheck.id !== req.header.userSessionId) {
     //   res.status(401).send({ message: "Unauthorized action detected" });
     // }
 
