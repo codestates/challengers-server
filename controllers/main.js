@@ -8,6 +8,8 @@ module.exports = async (req, res) => {
   //   const token = req.headers.authorization.split(" ")[1];
   //사용자 데이터를 찾고 이를 수정
   try {
+    console.log("세션", req.session);
+    console.log("세션 아이디", req.session.userId);
     // /*로그인 된 후 기본적인 유저 확인 과정*/
     // const valCheck = await jwt.verify(token, process.env.SALT);
     // //세션 자체가 없을때
@@ -75,7 +77,7 @@ module.exports = async (req, res) => {
     //   // limit: 2,
     //   // order: [[sequelize.fn("max", sequelize.col("totalLike")), "desc"]],
     // });
-    console.log("태그 리스트", tagList);
+    // console.log("태그 리스트", tagList);
     const challengerList = await challenge.findAll({
       //방법1 > 1대n 관계에서 테이블을 join하고 내림차순 정렬 (limit 성공함 - literal로...)
       //전체 컬럼중에서 likes 컬럼의 id컬럼을 가지고 카운트, 그리고 새로운 컬럼 이름은 totalLike
