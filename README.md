@@ -19,5 +19,7 @@
 |연호진|팀원|Frontend|
 
 ## [배포](http://challengers-codemon.s3-website.ap-northeast-2.amazonaws.com/main)
+## [발표자료](https://github.com/codestates/challengers-client/files/8707238/8-CoDeMon-challengers.pdf)
+
 
 
