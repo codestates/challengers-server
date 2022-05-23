@@ -1,10 +1,7 @@
-# challengers-server
+# challengers
+사용자가 자신의 도전을 사람들과 공유하고 함께하는 서비스
 
-## 프로젝트명 : challengers
-## 팀 명 : CoDeMon
-
-#### 기능구현 내용
-- 사용자가 자신의 도전을 사람들과 공유하고 함께하는 서비스
+## 기능구현 내용
 - 회원가입 후 로그인 및 정보변경을 할 수 있다.
 - 개인이 도전을 생성하여 온라인에 업로드를 할 수 있다.
 - 업로드된 다양한 도전들을 유저들이 선택하여 도전해 볼 수 있다.
@@ -19,7 +16,7 @@
 |연호진|팀원|Frontend|
 
 ## [배포](http://challengers-codemon.s3-website.ap-northeast-2.amazonaws.com/main)
-## [발표자료](https://github.com/codestates/challengers-client/files/8707238/8-CoDeMon-challengers.pdf)
+## [발표영상](https://youtu.be/asV_ySQRLkE)
 
 
 
