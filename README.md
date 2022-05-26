@@ -19,8 +19,10 @@
 |이성재|팀원|Frontend|
 |연호진|팀원|Frontend|
 
+## Repository
+#### Client : https://github.com/codestates/challengers-client
+#### Server : https://github.com/codestates/challengers-server
 ## [배포](http://challengers-codemon.s3-website.ap-northeast-2.amazonaws.com/main)
 ## [발표영상](https://youtu.be/asV_ySQRLkE)
-
 
 
